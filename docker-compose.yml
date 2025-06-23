@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pii-detector
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app/uploads:/app/app/uploads   # 업로드 파일은 호스트에 저장
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

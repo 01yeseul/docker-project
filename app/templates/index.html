@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>📂 개인정보 탐지기</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📂 파일 내 개인정보 탐지기</h1>
+    <p>TXT, PDF, DOCX 파일을 업로드하여 개인정보(이메일, 전화번호 등) 포함 여부를 확인하세요.</p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".txt,.pdf,.docx,.jpg,.jpeg,.png" required>
+      <button type="submit">탐지 시작하기</button>
+    </form>
+  </div>
+</body>
+</html>
