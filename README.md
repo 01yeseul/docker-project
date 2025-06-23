@@ -43,25 +43,20 @@ pii-detector/
 
 ---
 
-## ⚡ 빠른 시작 (로컬 실행)
+#⚡ 빠른 시작 (로컬 실행)
+1. 환경 준비
+Python 3.10 이상
 
-### 1. 환경 준비
-
-Python 3.10+  
-아래 명령으로 라이브러리 설치:
-
-```bash
+의존성 설치:
 pip install -r requirements.txt
 
-OCR(이미지 문자 인식) 기능 사용 시,
 
-시스템에 Tesseract 및 한글 데이터가 설치되어 있어야 합니다.
-
+Note:
+OCR(이미지 문자 인식) 기능 사용 시 시스템에 Tesseract 및 한글 데이터가 설치되어 있어야 합니다.
 
 
 ### 2. 실행
-bash
-코드 복사
+
 uvicorn app.main:app --reload
 브라우저에서 http://localhost:8000 접속
 
